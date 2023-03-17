@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    border-radius: 20px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    background: #F7F7F7;
+    margin: 64px ;
+    color: #1C1C1C;
+    box-shadow: 6px 6px 6px #0E1D2F;
+    border-radius: 20px;
+    padding: 64px;
+    }
+
+/* Header */
+    .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        }
+        .perfil {
+            display: flex;
+            align-items: center;
+            }
+            .perfil-foto{
+                margin: 15px;
+                border-radius: 460px;
+                max-height: 160px;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                }
+            .titulo h1 {
+                margin-left: 10px;
+                font-weight: 700;
+                font-size: 3rem;
+                }
+
+/* parte de botoes*/
+    .tema{
+        display: inline;
+        align-items: flex-end;
+        justify-content: end;
+    }
+
+    .tema button {
+            margin-top: 0;
+            border-radius: 40px;
+            font-size: 1rem;
+            height: 50px;
+            width: 30%;
+            max-width: 120px;
+            border: 2px solid rgb(255, 255, 255);
+            background: rgba( 143, 77, 63, 0.75) ;
+            color: #F6F6F6;
+            transition: all 0.5s linear;
+        }
+    .tema button:hover {
+        background-color: #000401;
+    }
+
+/*projetos main*/
+    .projetos {
+        display: grid;
+        align-items: center;    
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+/* bolhas dentro de project*/
+        .bolha{
+            padding: 10px;
+            align-items: center;
+            background: linear-gradient(230.65deg, rgba(255, 127, 0, 0.25)  27.49%, rgba(255, 206, 0, 0.25) 83.19%);
+            box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42); 
+            border-radius: 20px;  
+            width: 100%;
+            margin-bottom:  10%;
+            }
+            .bolha h3{
+                margin: 3px;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+            .bolha h4{
+                margin-left: 15px;
+                font-size: 1.2rem;
+                color: #000;
+            }
+            .bolha p{
+                margin-left: 30px;
+                font-size: 1rem;
+                margin-bottom: 5px;
+            }
+            .bolha a{
+                color: #626364;
+            }
+
+/* Parte de alteração de tema*/
+
+.dark {
+    background:#F7F7F7;
+}
+
+.dark .container {
+    background:  #333439;
+    color: #F6F6F6;
+}
+.dark .bolha{
+    background: linear-gradient(230.65deg, rgb(90, 90, 90) 27.49%, #232324 83.19%);
+}
+
+.dark .bolha h4 {
+    color: #F7F7F7;
+}
+.dark .titulo h4{
+    color: #F7F7F7;
+}
+
+.dark .tema button {
+    background: #1C1C1C;
+    color: #F7F7F7;
+    border: 2PX solid #f7f7f7;
+}
+
+.dark .tema button:hover {
+	background-color: #4e545c;
+	color: #e5e8e8;
+}
+
+@media (max-width: 1024px) {
+   main {
+        width: 90%;
+    } 
+    .embeded {
+        width: 300px;
+        height: 300px;  
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .box iframe{
+        margin: 5px;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 650px) {
+
+.container {      
+    padding: 10px;
+    margin: 0;
+}
+    .perfil-foto {
+        display: none;
+    }
+    .cabecalho {
+       align-self: center;
+       padding: 10px;
+       margin: 10px;
+    }
+    .projetos {
+        align-self: center;
+        padding: 10px;
+        margin: 10px;
+     }
+    .titulo h1 {
+        margin-bottom: 10px;
+        }
+    .titulo h2 {
+        margin-bottom: 10px;
+        }
+    .titulo h4 {
+        margin-left: 0;
+        margin-bottom: 10px;
+        }
+    .titulo a{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+    }
+    .box iframe{
+        margin: 5px;
+        height: auto;
+        width: auto;
+    }
+}
